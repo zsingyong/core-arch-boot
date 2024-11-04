@@ -1,0 +1,23 @@
+<idea-plugin>
+  <id>core-arch-boot</id>
+  <name>核心组件</name>
+  <version>1.0</version>
+  <vendor email="support@jetzhu.com" url="http://www.jetzhu.com">jetzhu</vendor>
+
+  <description><![CDATA[
+      Enter short description for your plugin here.<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+
+  <idea-version since-build="173.0"/>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
