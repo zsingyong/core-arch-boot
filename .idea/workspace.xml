@@ -1,19 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2450094-71f5-4ee2-94a8-7718edb3b404" name="Default Changelist" comment="" />
+    <list default="true" id="f2450094-71f5-4ee2-94a8-7718edb3b404" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/fastjson-2.0.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/hutool-all-5.8.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/lombok.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/action/NettyMessageTestAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/activity/PluginStartupActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/cache/MyPluginApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/action/MyAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/action/MyActionRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/IControlQueueCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/ISessionQueueCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/OControlQueueCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/OSessionQueueCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/route/GlobalNetRouteCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/route/NativeNetRouteCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/route/NetRoute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMDataI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMDataO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMHead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMHeadI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMHeadO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/service/NettyDispatchHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/service/NettyServiceListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/utils/BusUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/utils/IMControlTools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/utils/IMMessageTools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/utils/MyLogUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/jet/zhu/core/MyAction.java" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectId" id="2oNlF6GRvBTpyWaluzNvfG4ZSWa" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="me.jet.zhu.core.common.netty.service.utils" />
+      <recent name="me.jet.zhu.core.common.netty.cache" />
+      <recent name="me.jet.zhu.core.common.netty.dto" />
+      <recent name="me.jet.zhu.core.common.netty.service" />
+      <recent name="me.jet.zhu.core.cache" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JetZhuPC\Documents\GitHub\core-arch-boot\lib" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -65,7 +135,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

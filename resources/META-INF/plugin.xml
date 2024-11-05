@@ -1,23 +1,39 @@
 <idea-plugin>
-  <id>core-arch-boot</id>
-  <name>核心组件</name>
-  <version>1.0</version>
-  <vendor email="support@jetzhu.com" url="http://www.jetzhu.com">jetzhu</vendor>
+    <id>core-arch-boot</id>
+    <name>核心组件</name>
+    <version>1.0</version>
+    <vendor email="support@jetzhu.com" url="http://www.jetzhu.com">jetzhu</vendor>
 
-  <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+    <description><![CDATA[
+      <em>
+      测试描述
+      测试描述
+      测试描述
+      测试描述
+      测试描述
+      测试描述
+      测试描述
+      测试描述
+      测试描述
+      测试描述
+      测试描述
+      </em>
     ]]></description>
 
 
-  <idea-version since-build="173.0"/>
+    <idea-version since-build="173.0"/>
 
-  <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
-  </extensions>
+    <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity order="first" implementation="me.jet.zhu.core.activity.PluginStartupActivity"/>
+        <applicationService serviceImplementation="me.jet.zhu.core.cache.MyPluginApplicationContext"/>
+        <applicationService serviceImplementation="me.jet.zhu.core.common.netty.cache.ISessionQueueCache"/>
+    </extensions>
 
-  <actions>
-    <!-- Add your actions here -->
-  </actions>
+    <actions>
+        <!-- Add your actions here -->
+        <action id="IDNettyMessageTestAction" class="me.jet.zhu.core.action.NettyMessageTestAction" text="测试">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
 
 </idea-plugin>
