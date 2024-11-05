@@ -9,4 +9,9 @@ public class IMRequest {
 
     private IMHeadI head;
     private IMDataI data;
+
+    public IMRequest() {
+        this.head = new IMHeadI();
+        this.data = new IMDataI();
+    }
 }

@@ -13,4 +13,7 @@ public class NetRoute {
     private String hostB;
     private String maskB;
     private Integer portB;
+    private Long txCount;
+    private Boolean isAlive;
+    private Long lastChkTime;
 }

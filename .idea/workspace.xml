@@ -2,40 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2450094-71f5-4ee2-94a8-7718edb3b404" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/fastjson-2.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/hutool-all-5.8.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/lombok.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/action/NettyMessageTestAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/activity/PluginStartupActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/cache/MyPluginApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/action/MyAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/action/MyActionRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/IControlQueueCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/ISessionQueueCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/OControlQueueCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/OSessionQueueCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/route/GlobalNetRouteCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/route/NativeNetRouteCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/route/NetRoute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMDataI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMDataO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMHead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMHeadI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMHeadO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/service/NettyDispatchHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/service/NettyServiceListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/utils/BusUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/utils/IMControlTools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/utils/IMMessageTools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/utils/MyLogUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/action/NettyMessageCtrlAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMSessionCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMSessionProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMSessionText.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/jet/zhu/core/MyAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/jet/zhu/core/action/NettyMessageTestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/action/NettyMessageTextAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/route/NativeNetRouteCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/route/NativeNetRouteCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/route/NetRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/cache/route/NetRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/service/NettyDispatchHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/service/NettyDispatchHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/service/NettyServiceListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/service/NettyServiceListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/utils/IMControlTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/utils/IMControlTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/utils/IMMessageTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/utils/IMMessageTools.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,11 +57,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="me.jet.zhu.core.action" />
+      <recent name="me.jet.zhu.core.common.netty.dto" />
       <recent name="me.jet.zhu.core.common.netty.service.utils" />
       <recent name="me.jet.zhu.core.common.netty.cache" />
-      <recent name="me.jet.zhu.core.common.netty.dto" />
       <recent name="me.jet.zhu.core.common.netty.service" />
-      <recent name="me.jet.zhu.core.cache" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\JetZhuPC\Documents\GitHub\core-arch-boot\lib" />
@@ -142,5 +124,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/dto/IMSessionProxy.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/me/jet/zhu/core/common/netty/service/NettyDispatchHandler.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -44,7 +44,7 @@ public class NettyServiceListener {
                                             .addLast(new NettyDispatchHandler());
                                 }
                             }).option(ChannelOption.SO_BACKLOG, 128).childOption(ChannelOption.SO_KEEPALIVE, true);
-                    final ChannelFuture future = serverBootstrap.bind(6843).sync();
+                    final ChannelFuture future = serverBootstrap.bind(6666).sync();
                     future.channel().closeFuture().sync();
                 } catch (InterruptedException e) {
                     logger.info("启动服务异常：{}", e);

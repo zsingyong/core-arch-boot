@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>core-arch-boot</id>
     <name>核心组件</name>
-    <version>1.0</version>
+    <version>2024.11.05</version>
     <vendor email="support@jetzhu.com" url="http://www.jetzhu.com">jetzhu</vendor>
 
     <description><![CDATA[
@@ -27,12 +27,19 @@
         <postStartupActivity order="first" implementation="me.jet.zhu.core.activity.PluginStartupActivity"/>
         <applicationService serviceImplementation="me.jet.zhu.core.cache.MyPluginApplicationContext"/>
         <applicationService serviceImplementation="me.jet.zhu.core.common.netty.cache.ISessionQueueCache"/>
+        <applicationService serviceImplementation="me.jet.zhu.core.common.netty.cache.OSessionQueueCache"/>
+        <applicationService serviceImplementation="me.jet.zhu.core.common.netty.cache.IControlQueueCache"/>
+        <applicationService serviceImplementation="me.jet.zhu.core.common.netty.cache.OControlQueueCache"/>
+        <applicationService serviceImplementation="me.jet.zhu.core.common.netty.cache.route.NativeNetRouteCache"/>
+        <applicationService serviceImplementation="me.jet.zhu.core.common.netty.cache.route.GlobalNetRouteCache"/>
     </extensions>
 
     <actions>
-        <!-- Add your actions here -->
-        <action id="IDNettyMessageTestAction" class="me.jet.zhu.core.action.NettyMessageTestAction" text="测试">
-            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        <action id="IDNettyMessageTestAction" class="me.jet.zhu.core.action.NettyMessageTextAction" text="测试文本">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+        <action id="IDNettyMessageCtrlAction" class="me.jet.zhu.core.action.NettyMessageCtrlAction" text="测试控制">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
         </action>
     </actions>
 

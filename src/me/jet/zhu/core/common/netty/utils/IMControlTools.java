@@ -24,12 +24,7 @@ public class IMControlTools {
     private static final Logger logger = LoggerFactory.getLogger(IMControlTools.class);
 
     @SneakyThrows
-    public static void sendMessage(String host, Integer port, IMRequest request) {
-        sendMessage(host, port, request, null);
-    }
-
-    @SneakyThrows
-    public static void sendMessage(String host, Integer port, IMRequest imRequest, Consumer<IMResponse> callback) {
+    public static void sendControl(String host, Integer port, IMRequest request, Consumer<IMResponse> callback) {
         final NioEventLoopGroup group = new NioEventLoopGroup();
         final Bootstrap bootstrap = new Bootstrap();
         bootstrap.group(group).channel(NioSocketChannel.class).handler(new ChannelInitializer<SocketChannel>() {
@@ -41,19 +36,19 @@ public class IMControlTools {
                         .addLast(new SimpleChannelInboundHandlerAdapter<String>() {
                             @Override
                             protected void messageReceived(ChannelHandlerContext channelHandlerContext, String msg) throws Exception {
-                                logger.info("客户端收到消息：{}", msg);
+                                logger.info("Client got a message：{}", msg);
                                 final IMResponse imResponse = JSONUtil.toBean(msg, IMResponse.class);
                                 if (callback != null) {
                                     callback.accept(imResponse);
                                 }
-                                logger.info("客户端关闭通道");
+                                logger.info("Client close the channel!");
                                 channelHandlerContext.close();
                             }
 
                             @Override
                             public void channelActive(ChannelHandlerContext ctx) {
-                                final String msg = JSONUtil.toJsonStr(imRequest);
-                                logger.info("客户端发送消息：{}", msg);
+                                final String msg = JSONUtil.toJsonStr(request);
+                                logger.info("Client send a message：{}", msg);
                                 ctx.writeAndFlush(msg);
                             }
                         });

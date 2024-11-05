@@ -6,8 +6,11 @@ import lombok.experimental.Accessors;
 @Data
 @Accessors(chain = true)
 public class IMResponse {
-    private String host;
-    private Integer port;
     private IMHeadO head;
     private IMDataO data;
+
+    public IMResponse() {
+        this.head = new IMHeadO();
+        this.data = new IMDataO();
+    }
 }
